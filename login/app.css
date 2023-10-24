@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #969133;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 50%;
+  background: rgb(171, 165, 115);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 9999;
+}
+.wrapper h1 {
+  margin-bottom: 25px;
+}
+
+.main-section {
+  background: transparent;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.add-section {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-section input {
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin: 10px auto;
+  border: 2px solid #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.add-section button {
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin: 0px auto;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.add-section button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.add-section button span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.show-todo-section {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo-item {
+  max-width: 750px;
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.todo-item input {
+  margin: 10px 0;
+  padding: 5px 15px;
+  background: #fff;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo-item h2 {
+  padding: 2px 0px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 17px;
+}
+
+.todo-item small {
+  display: block;
+  width: 100%;
+  padding: 2px 0px;
+  color: #fff;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+select.status-select {
+  height: 1.3rem;
+  width: 15rem;
+  margin-top: 10px;
+  margin-bottom: 1vh;
+  margin-right: 5px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+}
+
+select.status-select option {
+  background-color: #dbe2ef;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.taskclick {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 20px;
+  width: 125px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.taskclick:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.todo-item h2 {
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+footer {
+  margin-top: 17em;
+  margin-right: 2em;
+}
